@@ -6,8 +6,8 @@
 
 #define MAX_ENTRIES 100
 
-// Criar uma lista de nome e endereço
-struct Entry { // struct para armazenar nome e endereço
+// Criar uma lista de nome e endereÃ§o
+struct Entry { // struct para armazenar nome e endereÃ§o
     char nome[100];
     char endereco[200];
 };
@@ -19,16 +19,16 @@ int main(void) {
     
     // Exemplo de entrada.
     snprintf(lista[total_entries].nome, sizeof(lista[total_entries].nome), "M Silva");
-    snprintf(lista[total_entries].endereco, sizeof(lista[total_entries].endereco), "Rua das Flores, 123, São Paulo, SP");
-    total_entries++; // Incrementar o número total de entradas após adicionar uma entrada
+    snprintf(lista[total_entries].endereco, sizeof(lista[total_entries].endereco), "Rua das Flores, 123, SÃ£o Paulo, SP");
+    total_entries++; // Incrementar o nÃºmero total de entradas apÃ³s adicionar uma entrada
 
     // Exibindo a lista
-    for (int i = 0; i < total_entries; i++) { // Corrigido: a condição de loop
+    for (int i = 0; i < total_entries; i++) { // Corrigido: a condiÃ§Ã£o de loop
         printf("Nome: %s\n", lista[i].nome);
-        printf("Endereço: %s\n", lista[i].endereco); // Corrigido: Adicionado o ": " e "\n"
+        printf("EndereÃ§o: %s\n", lista[i].endereco); // Corrigido: Adicionado o ": " e "\n"
     }
 
     return 0;
 }
-}
+}//NÃ³s que definimos a estrutura de dados, escolher o mais simples
 	
